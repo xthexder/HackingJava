@@ -12,7 +12,7 @@ public class HackC {
 	private static FilamentClassLoader loader = new FilamentClassLoader(false);
 	
 	public static void main(String[] args) throws Exception {
-		// Load the examples package so we can modify the bytecode
+		// Load the obfuscated examples package so we can modify the bytecode
 		loader.loadPackage("com.shopify.examples.obf");
 		
 		// Load a hook to identify the printOne method for the injector

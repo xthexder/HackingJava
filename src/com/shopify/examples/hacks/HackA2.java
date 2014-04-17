@@ -6,7 +6,7 @@ import com.shopify.examples.obf.ExampleA;
 
 public class HackA2 {
 	public static void main(String[] args) throws Exception {
-		// Find the subject field with reflection
+		// Find the subject field with reflection (in the obfuscated code)
 		Field f = ExampleA.class.getDeclaredField("subject");
 		
 		// Field is private, make it accessible
